@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <shape android:shape="oval">
+            <size android:width="20dp" android:height="20dp"/>
+            <stroke android:width="1dp" android:color="@color/color_icon_gray"/>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item >
+                <shape android:shape="oval">
+                    <size android:width="20dp" android:height="20dp"/>
+                    <solid android:color="@color/orange"/>
+                </shape>
+            </item>
+            <item android:drawable="@drawable/abc_ic_cab_done_holo_dark"/>
+        </layer-list>
+    </item>
+</selector>
